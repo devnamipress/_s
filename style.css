@@ -51,6 +51,16 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
+# Atlassian Primary Color Palette
+--------------------------------------------------------------*/
+:root {
+  /* Primary Palette */
+  --color-pacific-bridge: #0052CC; /* B400 - Pacific bridge */
+  --color-squid-ink: #172B4D;      /* N800 - Squid ink */
+  --color-doctor: #FFFFFF;         /* N0 - Doctor */
+}
+
+/*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
 
@@ -402,7 +412,7 @@ input,
 select,
 optgroup,
 textarea {
-	color: #404040;
+	color: var(--color-squid-ink);
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -533,17 +543,17 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-	color: #4169e1;
+	color: var(--color-pacific-bridge);
 }
 
 a:visited {
-	color: #800080;
+	color: var(--color-pacific-bridge);
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: #191970;
+	color: var(--color-squid-ink);
 }
 
 a:focus {
@@ -564,8 +574,8 @@ input[type="submit"] {
 	border: 1px solid;
 	border-color: #ccc #ccc #bbb;
 	border-radius: 3px;
-	background: #e6e6e6;
-	color: rgba(0, 0, 0, 0.8);
+	background: var(--color-pacific-bridge);
+	color: var(--color-doctor);
 	line-height: 1;
 	padding: 0.6em 1em 0.4em;
 }
@@ -574,7 +584,7 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	border-color: #ccc #bbb #aaa;
+	border-color: var(--color-squid-ink);
 }
 
 button:active,
@@ -918,8 +928,7 @@ textarea {
 	border-radius: 3px;
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	clip: auto !important;
-	clip-path: none;
-	color: #21759b;
+	color: var(--color-pacific-bridge);
 	display: block;
 	font-size: 0.875rem;
 	font-weight: 700;
